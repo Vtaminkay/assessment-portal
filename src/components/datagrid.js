@@ -32,7 +32,10 @@ const DataGrid = () => {
           </div>
         </div>
         <div>
-            Data Grid comes here
+            Data Grid 
+        </div>
+        <div>
+            Data Grid 
         </div>
       </div>
     </div>
