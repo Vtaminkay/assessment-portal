@@ -1,4 +1,5 @@
 import FirstComp from "./FirstComp";
+import SecondComponent from "./SecondComp";
 
 
 const CreateAssessment = () => {
@@ -9,11 +10,8 @@ const CreateAssessment = () => {
             <div className="  h-1/6"></div>
             <div className=" h-5/6 ">
                 <FirstComp/>
-           
+               {/*  <SecondComponent/> */}
             </div>
-       
-           
-
         </div>
       
      );

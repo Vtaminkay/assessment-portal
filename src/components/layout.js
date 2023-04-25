@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import EditNoteIcon from '@mui/icons-material/EditNote';
 
+
 import {
   LeftCircleOutlined,
   RightCircleOutlined,
@@ -84,7 +85,7 @@ const LayoutPage = () => {
         </Header>
         <div>
           {React.createElement(
-            collapsed ? LeftCircleOutlined : RightCircleOutlined,
+            collapsed ? RightCircleOutlined :  LeftCircleOutlined,
             {
               className: "trigger",
               style: {

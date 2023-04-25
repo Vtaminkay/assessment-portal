@@ -4,7 +4,7 @@ import LayoutPage from "./components/layout";
 
 function App() {
   return (
-    <div style={{ height: "100vh" }}>
+    <div className=" " style={{ height: "100vh" }}>
       <Router>
         <Routes>
           <Route path="*" element={<LayoutPage />}/>

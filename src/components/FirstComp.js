@@ -114,7 +114,7 @@ const FirstComp = () => {
           </div>
         </div>
 
-        <div className=" col-start-3 col-end-7 row-span-2 bg-yellow-300">
+        <div className=" col-start-3 col-end-7 row-span-2 ">
           <DataGrid/>
 
         </div>
