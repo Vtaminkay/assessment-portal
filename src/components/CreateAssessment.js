@@ -9,8 +9,8 @@ const CreateAssessment = () => {
     
             <div className="  h-1/6"></div>
             <div className=" h-5/6 ">
-                <FirstComp/>
-               {/*  <SecondComponent/> */}
+                {/* <FirstComp/> */}
+                <SecondComponent/>
             </div>
         </div>
       

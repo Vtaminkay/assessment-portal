@@ -1,21 +1,23 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import EditNoteIcon from '@mui/icons-material/EditNote';
-
-
+import homeicon from "./homeicon.png";
 import {
   LeftCircleOutlined,
   RightCircleOutlined,
   SettingFilled ,
   HomeFilled,
   PlusCircleOutlined,
+  RightCircleFilled,
+  LeftCircleFilled ,
 } from "@ant-design/icons";
 
-import { Layout, Menu } from "antd";
+import { Layout, Menu} from "antd";
 import ContentPage from "./Content";
 import logo from "./logo.png";
 import logo2 from "./butterfly.png"
-import Appbarr from "./Appbarr";
+import Appbarr from "./Appbar";
+import Icon from "@ant-design/icons/lib/components/Icon";
 
 
 const { Header, Sider } = Layout;
@@ -53,7 +55,8 @@ const LayoutPage = () => {
             items={[
               {
                 key: "1",
-                icon: <HomeFilled  style={{fontSize: '20px', color:'gray', marginRight:'4px'}}/>,
+                icon:
+                <HomeFilled style={{fontSize: '20px', color:'gray',marginRight:'4px'}}/> ,
                 label: <Link to="/" className=" text-[10px] font-semibold">Home</Link>,
               },
               {
@@ -80,12 +83,12 @@ const LayoutPage = () => {
           style={{ padding: 0, background: "#F7F7F7" }}
           className="  text-black border-b-2 shadow-sm border-gray-300"
         >
-         {/*  <PrimarySearchAppBar/> */}
+        
          <Appbarr/>
         </Header>
         <div>
           {React.createElement(
-            collapsed ? RightCircleOutlined :  LeftCircleOutlined,
+            collapsed ?  RightCircleFilled   :  LeftCircleFilled,
             {
               className: "trigger",
               style: {

@@ -5,7 +5,8 @@ import CreateAssessment from "./CreateAssessment";
 import { Route } from "react-router";
 import TestLibrary from "./TestLibrary";
 import DataTable from "./Table";
-import HomeTable from "./home";
+
+import HomePage from "./home";
 const ContentPage = () => {
   const { Content } = Layout;
   return (
@@ -14,7 +15,7 @@ const ContentPage = () => {
         <Routes>
           <Route path="/Assessment" element={<CreateAssessment />} />
           <Route path="/TestLibrary" element={<DataTable/>}/>
-          <Route path="/" element={<HomeTable/> }/>
+          <Route path="/" element={<HomePage/> }/>
         </Routes>
       </Content>
     </>
